@@ -67,5 +67,27 @@
                 <td>F. Scott Fitzgerald</td>
             </tr>
         </table>
+
+        <hr>
+        <h2>Code Display</h2>
+
+        <p>
+            This Node.js code, given a data object, converts the object to a JSON string and stores it in a file with the specified path.
+        </p>
+        <pre>
+            const fileSystem = require('fs')
+
+            const storeData = (data, path) => {
+              try {
+                fileSystem.writeFileSync(path, JSON.stringify(data))
+              } catch (error) {
+                console.error(error)
+              }
+            } 
+        </pre>
+
+        <p>
+            Source to the code: <a href="https://code.pieces.app/collections/node-js">View Code</a>
+        </p>
     </body>
 </html>
